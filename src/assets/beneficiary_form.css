@@ -1,0 +1,527 @@
+/* beneficiary_form.css */
+/* beneficiary_form.css */
+body.beneficiary-page .main-nav {
+    display: none;
+}
+
+.modern-form-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+}
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #eee;
+}
+
+.back-home-btn {
+    padding: 0.85rem 1.5rem;
+    background: #f1f3f4;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    color: #3c4043;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.back-home-btn:hover {
+    background: #e8eaed;
+    border-color: #d2e3fc;
+}
+/* Progress steps should be inside the form container */
+.progress-steps {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 2rem auto; /* Adjusted margin */
+    gap: 1.5rem;
+    padding: 0 2rem; /* Added padding */
+    max-width: 100%; /* Ensure it doesn't overflow */
+}
+
+/* Rest of your existing CSS remains the same */
+:root {
+    --primary: #4361ee;
+    --secondary: #3f37c9;
+    --accent: #4895ef;
+    --success: #4cc9f0;
+    --danger: #f72585;
+    --light: #f8f9fa;
+    --dark: #212529;
+    --gray: #6c757d;
+}
+
+.modern-form-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.form-header h1 {
+    color: var(--primary);
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.progress-steps {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    gap: 1.5rem;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    background: var(--light);
+    color: var(--gray);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.step span {
+    background: white;
+    color: var(--gray);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+}
+
+.step.active {
+    background: var(--primary);
+    color: white;
+    box-shadow: 0 5px 15px rgba(67, 97, 238, 0.3);
+}
+
+.step.active span {
+    background: var(--secondary);
+    color: white;
+}
+
+.form-section {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.section-title {
+    color: var(--primary);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.section-title i {
+    font-size: 1.8rem;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--dark);
+    font-size: 1rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s;
+    background: #f8f9fa;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--accent);
+    background: white;
+    box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.1);
+    outline: none;
+}
+
+.form-group textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.read-only {
+    background: #f1f3ff;
+    color: var(--dark);
+    border-color: #d6e0ff !important;
+}
+
+.input-with-action {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.verify-btn {
+    padding: 0 1.25rem;
+    background: #e9f5ff;
+    border: 2px solid #cce4ff;
+    border-radius: 8px;
+    color: var(--primary);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+    white-space: nowrap;
+    font-size: 0.9rem;
+}
+
+.verify-btn:hover {
+    background: #d6e9ff;
+}
+
+.verify-btn.verified {
+    background: #e6f7ee;
+    border-color: #c3eed6;
+    color: #2e8b57;
+}
+
+.location-btn {
+    padding: 0.85rem 1rem;
+    width: 100%;
+    background: #f0f7ff;
+    border: 2px solid #d6e7ff;
+    border-radius: 8px;
+    color: var(--primary);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.location-btn:hover {
+    background: #e1eeff;
+}
+
+.coordinates {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--gray);
+    text-align: center;
+}
+
+.file-upload-card {
+    position: relative;
+    height: 120px;
+    border: 2px dashed #dee2e6;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    background: #f8f9fa;
+    overflow: hidden;
+}
+
+.file-upload-card:hover {
+    border-color: var(--accent);
+    background: #f0f7ff;
+}
+
+.file-upload-card input[type="file"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.file-preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.file-preview i {
+    font-size: 2rem;
+    color: var(--primary);
+}
+
+.file-preview span {
+    font-size: 0.9rem;
+    color: var(--dark);
+}
+
+.file-preview a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.icon-pdf { color: #e74c3c; }
+.icon-image { color: #3498db; }
+.icon-upload { color: var(--primary); }
+
+.terms-agreement {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 2rem 0 1.5rem;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.terms-agreement input {
+    width: 18px;
+    height: 18px;
+}
+
+.terms-agreement label {
+    font-size: 0.95rem;
+    color: var(--dark);
+    cursor: pointer;
+}
+
+.section-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.back-btn, .next-btn, .submit-btn {
+    padding: 0.85rem 2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.back-btn {
+    background: white;
+    border: 2px solid var(--gray);
+    color: var(--gray);
+}
+
+.back-btn:hover {
+    background: #f8f9fa;
+    border-color: var(--dark);
+    color: var(--dark);
+}
+
+.next-btn, .submit-btn {
+    background: var(--primary);
+    border: 2px solid var(--primary);
+    color: white;
+    box-shadow: 0 4px 10px rgba(67, 97, 238, 0.3);
+}
+
+.next-btn:hover, .submit-btn:hover {
+    background: var(--secondary);
+    border-color: var(--secondary);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(67, 97, 238, 0.4);
+}
+
+.submit-btn:disabled {
+    background: var(--gray);
+    border-color: var(--gray);
+    transform: none;
+    box-shadow: none;
+    cursor: not-allowed;
+}
+
+.loading-spinner {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.error-text {
+    color: var(--danger);
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+    display: block;
+}
+
+/* Icons (you can use an icon library or SVG) */
+.icon-user:before { content: "👤"; }
+.icon-location:before { content: "📍"; }
+.icon-bank:before { content: "🏦"; }
+.icon-docs:before { content: "📄"; }
+.icon-gps:before { content: "🌐"; }
+.icon-pdf:before { content: "📎"; }
+.icon-image:before { content: "🖼️"; }
+.icon-upload:before { content: "⬆️"; }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .progress-steps {
+        flex-wrap: wrap;
+    }
+    
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .section-navigation {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .back-btn, .next-btn, .submit-btn {
+        width: 100%;
+    }
+}
+
+.error-text {
+    color: #e74c3c;
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+    display: block;
+}
+
+.loading-text {
+    color: #3498db;
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+    display: block;
+}
+
+/*new*/
+/* Add to your existing CSS */
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .loading {
+    color: #666;
+    font-size: 0.8rem;
+    margin-top: 5px;
+  }
+
+  .verification-code-group {
+    margin-top: 10px;
+    display: flex;
+    gap: 8px;
+  }
+  
+  .verification-code-group input {
+    flex: 1;
+    padding: 8px 12px;
+  }
+  
+  .verification-code-group button {
+    white-space: nowrap;
+  }
+  
+  #recaptcha-container {
+    margin: 10px 0;
+  }
+  /* Wallet Connection Styles */
+.wallet-input-group {
+    display: flex;
+    gap: 10px;
+}
+
+.connect-wallet-btn {
+    background: #f6851b;
+    color: white;
+    border: none;
+    padding: 0 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.connect-wallet-btn:hover {
+    background: #e2761b;
+}
+
+.connect-wallet-btn:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+}
+
+.wallet-help {
+    margin-top: 5px;
+    font-size: 0.85rem;
+}
+
+.wallet-help a {
+    color: #f6851b;
+    text-decoration: underline;
+}
