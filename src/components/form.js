@@ -140,7 +140,7 @@ const Form = () => {
             {paymentMethod === 'UPI' && (
               <div className='payment-confirmation'>
                 <h3>Scan the QR Code for Donation</h3>
-                <QRCodeCanvas value="upi://pay?pa=pratikshakhemnar164@oksbi&pn=Pratiksha%20Khemnar&aid=uGICAgMC8oLuEEw" size={128} />
+                <QRCodeCanvas value="https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=Hello%20World" size={128} /> // add your upi address
               </div>
             )}
 
